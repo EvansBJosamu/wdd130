@@ -1,7 +1,7 @@
 :root {
     --primary-color:#023040;
-    --secondary-color:#f4a261;
-    --accent1-color:#103d10;
+    --secondary-color: #160e04;
+    --accent1-color:aqua;
     --accent2-color:#f8c443e6;
     --heading-font: "Times New Roman", "Georgia", sans-serif;
     --body-font:Arial, Helvetica, sans-serif;
@@ -12,6 +12,8 @@ header {
     color: var(--accent2-color);
     height: 200px;
     font-size: large;
+    font-family: var(--heading-font
+    );
     padding: 5px;
 }
 
@@ -28,8 +30,9 @@ header img {
 }
 
 body {
-    
-    
+    font-family: var(--body-font);
+    font-style: italic;
+    color: var(--secondary-color);    
 }
 
 header, main, footer {
@@ -42,6 +45,10 @@ nav, p, section, article {
     margin: 16px;
     padding: 0;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .hero {
@@ -78,7 +85,7 @@ h1 {
     object-fit: cover;
 }
 
-article {
+.hero article {
     position: absolute;
     width: 100%;
     height: 220px;
@@ -91,15 +98,9 @@ article {
     color: #ffffff
 }
 
-p {
-    font-family: cursive;
-    font-style: italic;
-    color: #160e04;
-}
-
 h2 {
-    font-family: 'Segoe UI', Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: aqua;
+    font-family: var(--body-font);
+    color: var(--accent1-color);
     text-align: center;
     margin: 20px;
     padding: 15px;
